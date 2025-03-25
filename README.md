@@ -1,23 +1,25 @@
-# Serverless Computing
+# ECS - Amazon ECS (Elastic Container Service) 
 
-#### Serverless computing is an application development model where you can build and deploy applications on third-party managed server infrastructure. 
+### ECS is a fully-managed container orchestration service that allows you to easily launch, manage, and scale containerized applications in the cloud
 
-In this assignment , we are expected to build lambda function and API gateway
+In this assignment we are going to deploy docker image using ECS
 
-### Task to be completed
 
-    1) Build a program to check whether the given string is Anagram or not , return the response  
-       as String. Log the relevant information. Use AWS S3 and Lambda to test 
+### Task to be implemented
 
-    2) API  Gateway for any GET request of REST API 
-        * Follow all steps of ec2-rds-s3-springboot-assignment 
-        * Build API gateway to view the details      
-   
+    1) Create a spring boot application with below config
+            port        : 9090
+            endpoint    : /service/welcome
+                          returns "Hello, welcome to the AWS ECS service"
+
+    2) Build docker image for the above application and push to dockerhub
+    
+    3) Use ECS Fargate to run the docker image
 
 ### Submission
 
     * Take each steps as screenshot
     * Use word document and upload the file in git
     * Provide access to the mentor
-
+    
 
